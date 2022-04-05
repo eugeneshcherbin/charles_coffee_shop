@@ -13,4 +13,4 @@ Maven  > 3
 mvn clean package
 
 # Run 
-java -jar charlens_coffee_shop-1.0-SNAPSHOT.jar large coffee with extra milk, small coffee with special roast, bacon roll, orange juice
+java -jar target\coffee_shop_service.jar large coffee with extra milk, small coffee with special roast, bacon roll, orange juice

@@ -1,6 +1,7 @@
 package com.example.domain;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class Receipt {
     }
 
     public List<Order> getOrders() {
-        return orders;
+        return new ArrayList<>(orders);
     }
 
     public BigDecimal getTotalAmount() {
@@ -37,7 +38,7 @@ public class Receipt {
     }
 
     public Date getReceiptDate() {
-        return receiptDate;
+        return new Date(receiptDate.getTime());
     }
 
     public String getCurrency() {
